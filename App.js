@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { TailwindProvider } from 'tailwindcss-react-native';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './screens/HomeScreen';
+import ToDoScreen from './screens/To_Do_Screen';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,7 +12,7 @@ export default function App() {
     <NavigationContainer>
       <TailwindProvider>
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Home" component={ToDoScreen} />
         </Stack.Navigator>
       </TailwindProvider>
     </NavigationContainer>
