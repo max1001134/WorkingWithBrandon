@@ -1,8 +1,9 @@
-import { View, Text, SafeAreaView, Image, TextInput, ScrollView, TouchableOpacity, KeyboardAvoidingView, Modal} from 'react-native'
+import { View, Text, SafeAreaView, Image, TextInput, ScrollView, TouchableOpacity, KeyboardAvoidingView, Modal, Button, Keyboard} from 'react-native'
 import React, { useLayoutEffect, useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
 import Tasklist from '../components/Tasklist';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { AntDesign } from '@expo/vector-icons';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -61,11 +62,22 @@ const HomeScreen = () => {
             <TouchableOpacity className = "" onPress={() => setModalVisible(!modalVisible)}>
               <Ionicons name = "add-circle-outline" size = {50} color = "salmon" />
             </TouchableOpacity>
-            <Modal visible={modalVisible} animationType="fade" transparent={true} onRequestClose={() => {setModalVisible(!modalVisible)}}>
-              <View>
-                <Text>Test</Text>
+            <Modal
+              transparent = {true}
+              visible = {modalVisible}
+            >
+            <View style={{backgroundColor:"#000000aa", flex:1}}>
+              <View className="bg-white w-full h-100 absolute bottom-0 rounded-t-lg">
+                <View className="flex flex-row mt-6 ml-6 mb-6">
+                  <Text className = "font-bold text-base">T: </Text>
+                  <TextInput autoFocus={true}/>
+                  <TouchableOpacity onPress={() => setModalVisible(!modalVisible)} className="absolute right-6">
+                    <AntDesign name="upsquare" size={24} color="black" />
+                  </TouchableOpacity>
+                </View>
               </View>
-            </Modal>
+            </View>
+          </Modal>
           </View>
         </View>
 
