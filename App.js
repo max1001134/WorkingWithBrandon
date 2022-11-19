@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ToDoScreen from './screens/To_Do_Screen';
 import LeaderboardScreen from './screens/LeaderboardScreen';
+import LoginScreen from './screens/LoginScreen';
 
 import { LogBox } from 'react-native'; //to suppress stupid key prop warning
 
