@@ -19,7 +19,7 @@ const HomeScreen = () => {
     })
   }, [])
   return (
-    <SafeAreaView className = "flex-1">
+    <SafeAreaView className = "flex-1 bg-white">
     {/* Title and shii */}
       <View className = "items-center">
         <Text className = " pb-1 font-bold text-2xl">Community Leaders</Text>
@@ -31,7 +31,7 @@ const HomeScreen = () => {
               className = 'h-7 w-7 bg-pink-300 p-6 rounded-full'
             />
           <View className = "pb-4">
-            <Text className = "pl-2 pt-2 font=bold text-rose-500 text-xs">Complete tasks with...</Text>
+            <Text className = "pl-2 pt-2 text-rose-500 text-xs">Tally it up with...</Text>
             <Text className = "flex-row font-bold pl-2">{community}</Text>
           </View>
         </View>
@@ -48,7 +48,7 @@ const HomeScreen = () => {
                 <Text className = "pt-2 pl-2">
                     Prize: 
                 </Text>
-                <Text className = "pt-2 pl-1">
+                <Text className = "pt-2 pl-1 font-semibold">
                     {rewards}
                 </Text>
             </View>
@@ -57,7 +57,7 @@ const HomeScreen = () => {
                 <Text className = "pt-2 pl-2">
                     Period: 
                 </Text>
-                <Text className = "pt-2 pl-1">
+                <Text className = "pt-2 pl-1 font-semibold">
                     {period}
                 </Text>
             </View>

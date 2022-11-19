@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import { TailwindProvider } from 'tailwindcss-react-native';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -28,7 +28,7 @@ export default function App() {
             borderTopWidth: 0,
             left: 15,
             right: 15,
-            bottom: 15,
+            bottom: 50,
             height: "7%",
             backgroundColor: "#ffffff",
           },
@@ -37,18 +37,18 @@ export default function App() {
         })}>
           <Navbar.Screen name="Todo" component={ToDoScreen} options={{
             tabBarIcon: ({focused, size, color}) => (
-              <View style={{alignItems:'center', justifyContent:'center', textAlign:'center'}}>
+              <SafeAreaView style={{alignItems:'center', justifyContent:'center', textAlign:'center', top: 10}}>
                 <MaterialIcons name="view-list" size={24} color={focused ? "#FA8072" : "#000000"} />
                 <Text style={{color: focused ? "#FA8072" : "#000000", fontSize: 12}}>To-Do List</Text>
-              </View>
+              </SafeAreaView>
             ),
           }}/>
           <Navbar.Screen name="Home" component={LeaderboardScreen} options={{
             tabBarIcon: ({focused, size, color}) => (
-              <View style={{alignItems:'center', justifyContent:'center', textAlign:'center'}}>
+              <SafeAreaView style={{alignItems:'center', justifyContent:'center', textAlign:'center', top: 10}}>
                 <MaterialIcons name="leaderboard" size={24} color={focused ? "#FA8072" : "#000000"} />
                 <Text style={{color: focused ? "#FA8072" : "#000000", fontSize: 12}}>Leaderboard</Text>
-              </View>
+              </SafeAreaView>
             ),
           }}/>
         </Navbar.Navigator>
