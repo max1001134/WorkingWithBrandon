@@ -15,7 +15,7 @@ const HomeScreen = () => {
   }, [])
 
 
-  const [community, setCommunity] = useState("Insert a Community");
+  const [community, setCommunity] = useState("North Korea");
   const [modalVisible, setModalVisible] = useState(false);
   const [communityProfilePic, setCommunityProfilePic] = useState('https://theawesomedaily.com/wp-content/uploads/2022/07/pfp18.jpeg');
 
@@ -33,9 +33,9 @@ const HomeScreen = () => {
     <SafeAreaView className = "bg-white pt-5 grow">
       {/* Title and shii */}
       <View className = "items-center">
-        <Text className = " pb-1 font-bold text-2xl">Current To-Do Lists</Text>
+        <Text className = "pb-1 font-bold text-2xl">Current To-Do Lists</Text>
         <View className = "flex-row">
-          <Image
+          <Image 
               source = {{
                 uri: communityProfilePic
               }}
