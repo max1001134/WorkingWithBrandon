@@ -15,9 +15,9 @@ const HomeScreen = () => {
   }, [])
 
 
-  const [community, setCommunity] = useState("North Korea");
+  const [community, setCommunity] = useState("The Rise Roommates");
   const [modalVisible, setModalVisible] = useState(false);
-  const [communityProfilePic, setCommunityProfilePic] = useState('https://theawesomedaily.com/wp-content/uploads/2022/07/pfp18.jpeg');
+  const [communityProfilePic, setCommunityProfilePic] = useState('https://images.csmonitor.com/csm/2015/07/924596_1_0727-roommates_standard.jpg?alias=standard_900x600');
 
   {/* 
   What a Community Task must have. We must make an array out of these items to store task items */ }

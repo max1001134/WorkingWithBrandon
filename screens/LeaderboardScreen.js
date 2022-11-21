@@ -6,8 +6,8 @@ import Placement from '../components/Placement';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
-  const [community, setCommunity] = useState("North Korea");
-  const [communityProfilePic, setCommunityProfilePic] = useState('https://theawesomedaily.com/wp-content/uploads/2022/07/pfp18.jpeg');
+  const [community, setCommunity] = useState("The Rise Roommates");
+  const [communityProfilePic, setCommunityProfilePic] = useState('https://images.csmonitor.com/csm/2015/07/924596_1_0727-roommates_standard.jpg?alias=standard_900x600');
   const [rewards, setRewards] = useState("50$ and free Dinner");
   const [period, setPeriod] = useState("Date 1 - Date 2");
   const [members, setMembers] = useState(["Max:10", "Joey:150", "Warren:60", "AJ:10"]);

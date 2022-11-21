@@ -8,15 +8,15 @@ import React, {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 
 //import firebase stuff
-import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth';
-import { getDatabase, set, ref } from 'firebase/database';
-import {app} from '../config.js';
+//import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth';
+//import { getDatabase, set, ref } from 'firebase/database';
+//import {app} from '../config.js';
 
 const LoginScreen = () => {
 
   //get authentication and database
-  const auth = getAuth(app);
-  const database = getDatabase(app);
+  //const auth = getAuth(app);
+  //const database = getDatabase(app);
 
   //create user credentials if email and password are valid
   const register = () => {
